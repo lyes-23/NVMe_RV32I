@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 ENTITY fifo_32b IS
 	PORT(
-		din		    : in std_logic_vector(31 downto 0);
-		dout		: out std_logic_vector(31 downto 0);
+		din		    : in std_logic_vector(95 downto 0);
+		dout		: out std_logic_vector(95 downto 0);
 
 		push		: in std_logic;
 		pop	    	: in std_logic;
@@ -19,7 +19,7 @@ ENTITY fifo_32b IS
 END fifo_32b;
 
 architecture archi of fifo_32b is
-signal fifo_d : std_logic_vector(31 downto 0);
+signal fifo_d : std_logic_vector(95 downto 0);
 signal fifo_v : std_logic:='0';
 
 	begin
